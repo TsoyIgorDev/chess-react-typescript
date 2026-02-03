@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* b7c0d8 - черный e8edf9 - белый */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  width: calc(72px * 8);
+  height: calc(72px * 8);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell img {
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+
+.black {
+  background-color: #b7c0d8;
+}
+
+.white {
+  background-color: #e0e9ff;
+}
+
+.selected {
+  background-color: #bdafff;
+}
+
+.available {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #bdafff;
+}
